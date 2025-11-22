@@ -9,14 +9,25 @@
 <body>
 	<!-- the entire body must be written by student -->
     <h1>Login Form</h1>
-	<form id="loginForm">
-		<input type="text" placeholder="Username" id="username"/>
-		<input type="password" placeholder="Password" id="password"/>
-		<input type="checkbox" id="checkbox" label="Remember me." />
-		<button type="submit" id="submit" >submit</button>
-	</form>
-	<br>
-	  <button id="existing">Login as existing user</button>
+	
+	  <form id="loginForm">
+    <label for="username">Username:</label>
+    <input type="text" placeholder="Username" id="username" />
+
+    <label for="password">Password:</label>
+    <input type="password" placeholder="Password" id="password" />
+
+    <label for="checkbox">
+      <input type="checkbox" id="checkbox" />
+      Remember me:
+    </label>
+
+    <!-- tests expect an input[type="submit"] with value="Submit" -->
+    <input type="submit" id="submit" value="Submit" />
+  </form>
+
+  <br />
+  <button id="existing">Login as existing user</button>
 	
     <script type="text/javascript" src="./script.js">
 </script>
